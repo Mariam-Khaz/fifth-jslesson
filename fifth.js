@@ -5,7 +5,7 @@ const account = {
     console.log(this.balance);
   },
   deposit() {
-    const deposit = parsefloat(prompt("how much to deposit"));
+    const deposit = parseFloat(prompt("how much to deposit"));
     if (deposit <= 0 || isNaN(deposit)) {
     alert("NOT A VALID AMOUNT")
     }
@@ -13,7 +13,7 @@ const account = {
     console.log(this.balance)
   },
   withdrawal(){
-    let withdrawal = parsefloat(prompt("How much to withrawal?"))
+    let withdrawal = parseFloat(prompt("How much to withrawal?"))
     if (withdrawal <= 0 || isNaN(withdrawal) || withdrawal > this.balance) {
     alert("Not a Valid Amount")
     }
